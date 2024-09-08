@@ -89,5 +89,59 @@ let dados = [
         imagem: "imagens/anfitriao.png",
         link: "https://ordemparanormal.fandom.com/wiki/O_Anfitrião",
     },
+    {
+        titulo: "Erin Parker",
+        descricao: "Erin Parker era uma engenheira, especialista em explosivos e mecênica, que fazia parte da Equipe Brasa da Ordo Realitas, entrando originalmente na Ordem por influência de sua avó, Francisca Parker, e depois, se envolvendo na investigação do desaparecimento de Elizabeth Webber, assim, se juntando a Força D.",
+        imagem: "imagens/erin.png",
+        link: "https://ordemparanormal.fandom.com/wiki/Erin_Parker",
+    },
+    {
+        titulo: "Carina Leone",
+        descricao: "Carina Leone, é uma italiana formada em moda, pertencente a uma família de justiceiros clandestinos que lutam contra o Paranormal, levando o nome Leone. Ela foi chamada para o Brasil após um decreto de estado de emergência contra o Paranormal para enfrentar Kian, assim entrando para a equipe Abutres.",
+        imagem: "imagens/carina.png",
+        link: "https://ordemparanormal.fandom.com/wiki/Carina_Leone",
+    },
+    {
+        titulo: "Mia",
+        descricao: "Mia, junto de seu cão Lupi, são os protagonistas de Enigma do Medo e personagens secundários de Desconjuração e Calamidade. Mia é uma investigadora paranormal e filha do Senhor Veríssimo, atual líder da Ordo Realitas.",
+        imagem: "imagens/mia.png",
+        link: "https://ordemparanormal.fandom.com/wiki/Mia",
+    },
+    {
+        titulo: "Samuel Norte",
+        descricao: "Samuel Norte é um personagem secundário, presente em Desconjuração, Calamidade e futuramente, Enigma do Medo. Ele é um hacker e agente da Ordo Realitas, formando a Equipe de Pesquisa da Ordem em conjunto com Kaiser e Letícia Mantra. Em conjunto com Johnny Tabasco e Rubens Naluti, Samuel pesquisou informações sobre a entidade do Anfitrião, uma entidade sádica que sequestrava pessoas para seus jogos.",
+        imagem: "imagens/samuel.png",
+        link: "https://ordemparanormal.fandom.com/wiki/Samuel_Norte",
+    },
+    {
+        titulo: "Tristan Monteiro",
+        descricao: "Tristan Monteiro, 29 anos, é carismático, extrovertido e um pouco sem vergonha. Seu carisma e ótima intuição o tornaram um dos principais recrutadores da Ordem. Tristan foi responsável pelo recrutamento de Beatrice, Elizabeth e Daniel Hartmann.",
+        imagem: "imagens/tristan.png",
+        link: "https://ordemparanormal.fandom.com/wiki/Tristan_Monteiro",
+    },
+    {
+        titulo: "Ivete Beicur",
+        descricao: "Ivete Beicur é uma figura materna para Arthur Cervero e uma amiga de longa data dos Gaudérios Abutres, gangue de motoqueiros de Carpazinha. Proprietária do bar Suvaco Seco, ela era uma figura central na vida dos personagens. Após eventos traumáticos que a deixaram com apenas Arthur como família, Ivete se junta à Ordo Realitas, atuando como responsável pela loja de armas e mantendo um bar fachada em homenagem ao seu antigo estabelecimento.",
+        imagem: "imagens/ivete.png",
+        link: "https://ordemparanormal.fandom.com/wiki/Ivete_Beicur",
+    },
+    {
+        titulo: "Clarissa Leão",
+        descricao: "Clarissa Leão é uma ex-agente da Ordo Realitas, fazendo parte de uma equipe elite de infiltração, a Equipe Espiãs, desde o ensino médio. Ela era muito próxima de Tristan Monteiro, tendo o conhecido quando ainda estava no colégio. Após perder suas melhores amigas, Clarissa começa sua busca por vingança, fazendo de tudo para matar Gal.",
+        imagem: "imagens/clarissa.png",
+        link: "https://ordemparanormal.fandom.com/wiki/Clarissa_Leão",
+    },
+    {
+        titulo: "Henri",
+        descricao: "Henri, ex-órfão do Santa Menefreda, era um amigo próximo de Gal e um dos muitos jovens influenciados por Leonardo Gomes, tornando-se um Escripta sedento por sangue. Durante o Dia Final da Desconjuração, ele confrontou a Ordo Realitas, revelando-se um adversário perigoso e instável. Após ser ferido, ele é libertado e foge, para mais tarde reaparecer em Calamidade como portador da Relíquia de Sangue, compartilhando seu corpo com o Diabo, dentro da Contenção Obscura.",
+        imagem: "imagens/henri.png",
+        link: "https://ordemparanormal.fandom.com/wiki/Henri",
+    },
+    {
+        titulo: "Aaron",
+        descricao: "Aaron é um agente veterano da Ordo Realitas que atuava junto de Senhor Veríssimo, Chizue Akechi, Arnaldo Fritz e Antônio Pontevedra. Ele demonstra ser extremamente introspectivo, raramente fazendo gestos e nunca sequer falando com alguém.",
+        imagem: "imagens/aaron.png",
+        link: "https://ordemparanormal.fandom.com/wiki/Aaron",
+    },
 ];
 

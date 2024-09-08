@@ -32,9 +32,12 @@ function renderizarPersonagens(personagens) {
 
 // Função para filtrar os personagens com base na busca
 function filtrarPersonagens(textoBusca) {
+    const termosBusca = textoBusca.toLowerCase().split(' ');
     const personagensFiltrados = dados.filter(personagem => {
-        // Busca exata no título do personagem (case-insensitive)
-        return personagem.titulo.toLowerCase().includes(textoBusca.toLowerCase());
+        return termosBusca.every(termo => {
+            return personagem.titulo.toLowerCase().includes(termo) ||
+                personagem.descricao.toLowerCase().includes(termo);
+        });
     });
 
     // Renderiza apenas o primeiro resultado (se existir)
@@ -46,7 +49,18 @@ function filtrarPersonagens(textoBusca) {
     }
 }
 
-// Chamar a função para renderizar os personagens inicialmente
+// Função para embaralhar um array
+function embaralharArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i],
+        array[j]] = [array[j], array[i]];
+    }
+}
+
+//aletoriza a ordem dos personagens
+embaralharArray(dados);
+//apresenta os personagens
 renderizarPersonagens(dados);
 
 // Adicionar um event listener ao campo de busca
@@ -61,4 +75,21 @@ const limparBusca = document.querySelector('.limpar-busca');
 
 limparBusca.addEventListener('click', () => {
     buscaInput.value = '';
+});
+
+const botaoOcultar = document.getElementById('ocultar-elementos');
+const elementosAEsconder = document.querySelectorAll('h1, input, .btn-pesquisa, .resultados-pesquisa');
+const mensagem = document.getElementById('mensagem');
+let elementosOcultos = false;
+
+botaoOcultar.addEventListener('click', () => {
+  elementosOcultos = !elementosOcultos;
+
+  elementosAEsconder.forEach(elemento => {
+    elemento.classList.toggle('oculto');
+  });
+
+  mensagem.classList.toggle('oculto');
+
+  botaoOcultar.textContent = elementosOcultos ? 'Mostrar Elementos' : 'Mostrar Apenas o Wallpaper';
 });

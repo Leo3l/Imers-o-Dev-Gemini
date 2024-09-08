@@ -111,7 +111,6 @@ section button:hover {
     /* Adiciona uma sombra mais intensa */
 }
 
-/* Estiliza os inputs dentro das seções */
 .limpar-busca {
     position: absolute;
     top: 5px;
@@ -151,7 +150,8 @@ section button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* Sombra leve */
     display: grid;
-    grid-template-columns: 8fr 2fr; /* Cria duas colunas de tamanho igual */
+    grid-template-columns: 8fr 2fr;
+    /* Cria duas colunas de tamanho igual */
     grid-gap: 20px;
 }
 
@@ -186,10 +186,6 @@ section button:hover {
     text-align: justify;
 }
 
-.img {
-    border-radius: 0.6rem;
-}
-
 /* Estiliza nenhum resultado */
 .sem-resultados {
     color: #E9A01D;
@@ -201,6 +197,23 @@ section button:hover {
     border: 1px solid #000000;
     padding: 10px;
     border-radius: 0.6rem;
+}
+
+/* Estilização básica para posicionar o botão */
+.btn-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+    /* Garante que o botão fique acima dos outros elementos */
+    background-color: #2c2c2c;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-toggle:hover {
+    background-color: #000000;
 }
 
 /* Estiliza o rodapé da página */
@@ -289,4 +302,20 @@ footer {
         font-size: 0.9rem;
         /* Tamanho da fonte do rodapé em telas pequenas */
     }
+}
+
+/* Estiliza os elementos a serem ocultados */
+#titulo,
+#busca,
+#pesquisar,
+.resultados-pesquisa {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /* Adiciona transição de transformação */
+}
+
+/* Classe para ocultar os elementos */
+.oculto {
+    opacity: 0;
+    transform: translateY(-20px);
+    /* Move o elemento para cima */
 }

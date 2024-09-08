@@ -16,14 +16,20 @@
         <section>
             <input type="text" name="busca" placeholder="Digite o nome do Personagem">
             <span class="limpar-busca">x</span>
-            <button type="submit">Pesquisar</button>
+            <button type="submit" class="btn-pesquisa">Pesquisar</button>
         </section>
 
         <section class="resultados-pesquisa">
             <div id="mensagem-erro" class="nenhum-resultado">
-                Nenhum personagem encontrado. Tente usar outras palavras-chave.
             </div>
         </section>
+
+        <section>
+            <button id="ocultar-elementos" class="btn-toggle" aria-label="Alternar visualização">Mostrar Apenas o
+                Wallpaper</button>
+            <div id="mensagem" class="oculto"></div>
+        </section>
+
     </main>
 
     <footer>
